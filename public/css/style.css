@@ -1,0 +1,191 @@
+/* ===============================
+   Reset & Global
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===============================
+   Header / Navigation
+=============================== */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #007bff;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 100px;
+    }
+
+    header nav ul.nav-active {
+        transform: translateX(0);
+    }
+
+    header nav ul li {
+        margin-bottom: 30px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* ===============================
+   Homepage / Products / Services / About
+=============================== */
+.products, .services-page, .about-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-cards, .service-cards, .about-page .team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card, .service-card, .about-page .member {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   Contact Page
+=============================== */
+.contact-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+/* ===============================
+   Footer
+=============================== */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ===============================
+   Responsive Cards / Sections
+=============================== */
+@media screen and (max-width: 768px) {
+    .product-cards, .service-cards, .about-page .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}
