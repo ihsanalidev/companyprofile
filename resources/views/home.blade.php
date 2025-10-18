@@ -8,4 +8,8 @@
     @include('components.client-logos')
 
     @include('components.role-content')
+
+    @include('components.go-beyond-section')
+
+    @include('components.awards-section')
 @endsection

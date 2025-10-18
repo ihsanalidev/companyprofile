@@ -83,10 +83,32 @@
         </div>
     </div>
 
+    <div id="content-hr" class="tab-pane">
+        <div class="highlight-cards-grid">
+            <div class="highlight-card">
+                <div class="card-image-wrapper">
+                    <img src="{{ asset('images/5.jpg') }}" alt="HR Payroll" class="highlight-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Advanced Payroll</h3>
+                    <p class="card-description">Automate complex regional payroll calculations and stay compliant with all local tax and labor laws.</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <div class="card-image-wrapper">
+                    <img src="{{ asset('images/6.jpg') }}" alt="HR Analytics" class="highlight-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Recruitment & Onboarding</h3>
+                    <p class="card-description">Streamline your hiring process from application tracking to smooth onboarding for new hires.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-    
-    
+    <div class="role-buttons text-center">
+    <a href="#learn-more" class="btn-role primary-btn">Book a demo</a>
+    <a href="#contact" class="btn-role secondary-btn">Explore more features &rarr;</a>
+    </div>
+ 
 </section>
