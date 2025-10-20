@@ -12,4 +12,13 @@
     @include('components.go-beyond-section')
 
     @include('components.awards-section')
+
+    @include('components.experience')
+
+    @include('components.customer-stories')
+
+    @include('components.insight-resources')
+
+    @include('components.hr-next-level-cta')
+
 @endsection

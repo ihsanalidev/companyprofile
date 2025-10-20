@@ -1163,6 +1163,618 @@ a {
 
 
 
+
+
+/* experience */
+/* ======================================= */
+/* REVISI AKHIR: Memastikan Komponen Berada di Tengah Halaman */
+/* ======================================= */
+
+.trusted-partner-section {
+    background-color: #3b5998; 
+    color: #ffffff;
+    padding: 120px 0; 
+    font-family: Arial, sans-serif; 
+}
+
+/* CONTAINER: FOKUS UTAMA PERBAIKAN */
+.container {
+    /* Mereduksi max-width agar lebih sesuai dengan konten halaman umum */
+    max-width: 1200px; 
+    /* Memastikan komponen berada di tengah halaman (horizontal) */
+    margin-left: auto; 
+    margin-right: auto;
+    /* Mengurangi padding horizontal agar lebih rapat ke tepi wadah halaman */
+    padding-left: 50px; 
+    padding-right: 50px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 30px; 
+        padding-right: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+}
+
+/* Logo dan Tag */
+.logo-group {
+    margin-bottom: 30px; 
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo-image {
+    height: 32px; 
+}
+
+.company-tag {
+    margin-top: 5px; 
+    font-size: 14px;
+    opacity: 0.7; 
+    font-weight: 300;
+}
+
+/* Konten Utama (Teks) */
+.text-content {
+    /* Lebar konten yang sama dengan lebar statistik di bawahnya */
+    max-width: 800px; 
+    margin-bottom: 120px; 
+    /* Memastikan teks rata kiri di dalam container yang kini sentral */
+    margin-left: 0; 
+    margin-right: auto;
+}
+
+.main-title {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 50px; 
+    }
+}
+
+.description {
+    font-size: 18px; 
+    opacity: 0.9;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Statistik Wrapper */
+.stats-wrapper {
+    /* Batasi lebar statistik */
+    max-width: 950px; 
+    /* Memastikan statistik rata kiri di dalam container yang kini sentral */
+    margin-left: 0; 
+    margin-right: auto;
+}
+
+/* Statistik Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px 20px; 
+    text-align: left; 
+}
+
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 20px;
+    }
+}
+
+.stat-value {
+    font-size: 48px;
+    font-weight: 800; 
+    margin-bottom: 4px;
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .stat-value {
+        font-size: 56px;
+    }
+}
+
+.stat-label {
+    font-size: 16px; 
+    opacity: 0.85;
+    line-height: 1.4;
+    font-weight: 300;
+    margin: 0; 
+    max-width: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================= */
+/* CSS untuk Komponen Customer Stories */
+/* ======================================= */
+
+.customer-stories-section {
+    /* Background Putih / Abu-abu terang */
+    /* background-color: #f7f7f7;  */
+    background-color: #ffffff; 
+    padding: 100px 0; 
+    font-family: Arial, sans-serif; 
+    color: #333;
+}
+
+.container {
+    /* Memastikan komponen berada di tengah halaman */
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header Section */
+.stories-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.stories-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.stories-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Main Testimonial Card */
+.main-testimonial-card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 850px;
+    margin: 0 auto 60px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.company-logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+}
+
+.quote-content {
+    margin-bottom: 30px;
+}
+
+.quote-text {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+    font-weight: 500;
+}
+
+.quote-author {
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.read-more-link {
+    display: block;
+    text-align: center;
+    color: #4b8df8; /* Warna biru */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.read-more-link:hover {
+    color: #2a61c5;
+}
+
+/* Story Cards Grid (Bagian Bawah) */
+.story-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+    .story-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .story-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.story-card {
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.story-image-placeholder {
+    height: 180px;
+    background-color: #eee; /* Placeholder warna */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.story-tag {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.story-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 15px 10px 15px;
+    min-height: 60px; /* Agar tinggi card konsisten */
+    line-height: 1.4;
+}
+
+.read-more-card-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #4b8df8;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 15px 15px 15px;
+}
+
+.read-more-card-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================= */
+/* CSS untuk Komponen Insights & Resources */
+/* ======================================= */
+
+.insights-resources-section {
+    background-color: #ebeff8;
+    padding: 100px 0; 
+    font-family: Arial, sans-serif; 
+    color: #333;
+}
+
+.container {
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.resources-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.resources-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.resources-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-weight: 300;
+}
+
+/* Resource Cards Grid */
+.resource-cards-grid {
+    display: grid;
+    /* Tata letak 3 kolom di desktop */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+    .resource-cards-grid {
+        /* Tata letak 2 kolom di tablet */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .resource-cards-grid {
+        /* Tata letak 1 kolom di mobile */
+        grid-template-columns: 1fr;
+    }
+}
+
+.resource-card {
+    /* Styling card agar terlihat terpisah */
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.resource-image-container {
+    /* Menentukan batas tinggi gambar */
+    height: 200px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.resource-image {
+    /* Gambar mengisi wadah */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar memenuhi wadah tanpa terdistorsi */
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover .resource-image {
+    transform: scale(1.05);
+}
+
+.resource-content {
+    padding: 20px 20px 15px 20px;
+    min-height: 200px; /* Memberi tinggi minimum agar card rata */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resource-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.resource-title {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.explore-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #4b8df8; /* Warna biru */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    margin-top: auto; /* Mendorong link ke bawah */
+}
+
+.explore-link:hover {
+    color: #2a61c5;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================= */
+/* CSS untuk Komponen HR Next Level CTA */
+/* ======================================= */
+
+.hr-cta-section {
+    /* Background abu-abu terang */
+    background-color: #f7f9fc; 
+    padding: 100px 0; 
+    font-family: Arial, sans-serif; 
+    color: #333;
+}
+
+.container {
+    /* Memastikan komponen berada di tengah halaman */
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cta-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Kolom Teks */
+.cta-text-column {
+    /* Batasi lebar kolom teks agar tidak terlalu panjang */
+    max-width: 500px; 
+    padding-right: 20px;
+}
+
+.cta-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.cta-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4b8df8; /* Warna biru */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #2a61c5;
+}
+
+/* Kolom Gambar */
+.cta-image-column {
+    /* Memastikan kolom gambar tidak melebar terlalu jauh */
+    max-width: 500px; 
+    flex-shrink: 0; /* Mencegah gambar menyusut */
+}
+
+.cta-mockup-image {
+    /* Gambar mengisi lebar wadahnya dan menjaga rasio aspek */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .cta-content-wrapper {
+        flex-direction: column-reverse; /* Pindahkan teks ke atas gambar di tablet/mobile */
+        text-align: center;
+    }
+    
+    .cta-text-column {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 30px;
+    }
+
+    .cta-title {
+        font-size: 32px;
+    }
+    
+    .cta-description {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- Product Highlight Cards Section Styling --- */
 /*
 .product-highlight-section {
