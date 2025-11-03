@@ -3,6 +3,8 @@
 @section('title', 'DataOn One-Stop HR Solution')
 
 @section('content')
+    @include('partials.announcement-bar')
+
     @include('components.hero-section')
     
     @include('components.client-logos')

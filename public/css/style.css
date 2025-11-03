@@ -1,7 +1,7 @@
 /* Definisikan variabel warna di root */
 :root {
-    --primary-blue: #4267B2; /* Perkiraan warna biru tombol */
-    --light-blue: #E9F0FF;   /* Perkiraan warna latar belakang nomor telepon */
+    --primary-blue: #4267B2;
+    --light-blue: #E9F0FF;
     --text-dark: #333;
     --text-light: #666;
     --border-color: #eee;
@@ -20,7 +20,6 @@ a {
     color: inherit;
 }
 
-/* Top Header Bar (Baris Atas) */
 .top-header {
     display: flex;
     justify-content: flex-end;
@@ -46,7 +45,6 @@ a {
     font-weight: 500;
     margin-right: 10px;
     cursor: pointer;
-    /* Pastikan border-box untuk perhitungan padding */
     box-sizing: border-box; 
 }
 
@@ -70,7 +68,7 @@ a {
 }
 
 .dropdown span::after {
-    content: ' \2304'; /* Unicode untuk panah ke bawah */
+    content: ' \2304';
     margin-left: 5px;
     font-size: 12px;
     vertical-align: middle;
@@ -96,7 +94,6 @@ a {
 }
 
 .logo {
-    /* Penting: Pastikan ini ada agar gambar dan teks sejajar */
     display: flex; 
     align-items: center;
     
@@ -106,9 +103,9 @@ a {
 }
 
 .logo-img {
-    height: 30px; /* Atur tinggi gambar (sesuai yang Anda inginkan) */
+    height: 30px;
     width: auto; 
-    margin-right: 8px; /* Jarak antara gambar dan teks */
+    margin-right: 8px;
 }
 
 .navigation {
@@ -130,7 +127,7 @@ a {
 }
 
 .navigation li span::after {
-    content: ' \2304'; /* Unicode untuk panah ke bawah */
+    content: ' \2304';
     margin-left: 5px;
     font-size: 10px;
     vertical-align: middle;
@@ -152,22 +149,6 @@ a {
     background-color: #355394; /* Sedikit lebih gelap */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* File: public/css/style.css */
-
 .vertical-divider {
     /* Atur lebar garis (garis vertikal) */
     width: 1px; 
@@ -181,23 +162,6 @@ a {
     /* Beri jarak di kiri dan kanan garis */
     margin: 0 20px; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .dropdown-container {
     position: relative;
@@ -222,11 +186,10 @@ a {
     vertical-align: middle;
 }
 
-/* Menu Dropdown */
 .dropdown-menu {
     position: absolute;
-    top: 100%; /* Posisikan tepat di bawah toggle */
-    right: 0;  /* Rata kanan dengan toggle */
+    top: 100%;
+    right: 0; 
     z-index: 10;
     list-style: none;
     padding: 10px 0;
@@ -236,9 +199,6 @@ a {
     border-radius: 5px;
     min-width: 180px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    
-    /* Secara default, menu disembunyikan */
-    /* Gunakan visibility: hidden dan opacity: 0 untuk transisi yang lebih halus */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px); /* Mulai sedikit di atas */
@@ -256,42 +216,14 @@ a {
     color: var(--primary-blue);
 }
 
-/* --- LOGIKA PURE CSS: Tampilkan saat Checkbox Tercentang --- */
-
 .dropdown-checkbox:checked ~ .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Pindahkan ke posisi normal */
+    transform: translateY(0); 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Modifikasi Navigasi Utama --- */
-
 .navigation li {
-    position: relative; /* Penting agar submenu posisinya relatif terhadap li induk */
+    position: relative;
     margin-right: 25px;
     padding: 5px 0;
     cursor: pointer;
@@ -302,34 +234,27 @@ a {
     color: var(--primary-blue);
 }
 
-/* Modifikasi Panah Bawaan */
 .navigation li span::after {
-    content: ' \2304'; /* Unicode untuk panah ke bawah */
+    content: ' \2304'; 
     margin-left: 5px;
     font-size: 10px;
     vertical-align: middle;
 }
 
-/* --- Gaya Sub-Menu (Dropdown) --- */
-
 .submenu {
     list-style: none;
     padding: 10px 0;
     margin: 0;
-    
     position: absolute;
-    top: 100%; /* Posisikan tepat di bawah li induk */
-    left: 0;   /* Rata kiri dengan li induk */
-    z-index: 20; /* Pastikan di atas elemen lain */
-    
+    top: 100%; 
+    left: 0;  
+    z-index: 20; 
     background-color: white;
     border: 1px solid var(--border-color);
-    border-top: none; /* Hilangkan garis atas agar menyatu */
+    border-top: none; 
     border-radius: 0 0 5px 5px;
     min-width: 200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    
-    /* Secara default, sembunyikan menu */
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px); /* Mulai sedikit di bawah */
@@ -352,108 +277,46 @@ a {
     color: var(--primary-blue);
 }
 
-/* --- LOGIKA HOVER: Tampilkan Sub-Menu --- */
-
 .navigation li:hover > .submenu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0); /* Pindah ke posisi normal */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Perbaikan Posisi Mega Menu --- */
-
 .navigation li .mega-submenu {
-    /* Atur lebar total Mega Menu */
     width: 600px; 
-    
-    /* Ganti 'right: 0' menjadi 'left: 0' agar rata kiri dengan item Company */
     left: 0;
-    right: auto; /* Pastikan right tidak disetel */
-    
+    right: auto;
     display: flex; 
     padding: 0;
     border-radius: 5px;
     border: 1px solid var(--border-color);
 }
 
-/* --- Perbaikan Padding dan Konten Kiri --- */
-
 .mega-menu-left {
     flex: 1; 
     background-color: #f7f9fd; 
-    padding: 10px 0; /* Ubah padding vertikal saja */
+    padding: 10px 0; 
     border-right: 1px solid var(--border-color);
     min-width: 200px;
 }
 
-/* Pertahankan padding horizontal pada tautan, bukan pada container */
 .mega-menu-link {
     display: block;
-    padding: 12px 25px; /* Padding yang menentukan jarak dari pinggir kiri/kanan */
+    padding: 12px 25px; 
     font-weight: 500;
     color: var(--text-dark);
 }
 
-/* Sesuaikan padding untuk link aktif/hover setelah border kiri */
 .mega-menu-left .mega-menu-link:hover,
 .mega-menu-left .active-link {
     background-color: var(--light-blue);
     color: var(--primary-blue);
     border-left: 3px solid var(--primary-blue); 
-    padding-left: 22px; /* Disesuaikan agar total padding kiri kembali 25px (22px + 3px) */
+    padding-left: 22px; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Announcement Bar Styling --- */
-
+/* ========================================================================= ANNOUNCEMENT BAR ============================================================================== */
 .announcement-bar {
     background-color: #f0f4ff; /* Latar belakang biru muda yang sangat terang */
     padding: 12px 20px;
@@ -489,52 +352,25 @@ a {
     vertical-align: middle;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* File: public/css/style.css */
-
-/* --- Kontainer Utama Flexbox (PENTING) --- */
+/* ========================================================================= HERO CONTENT ============================================================================== */
 .hero-content {
-    /* Ini adalah kunci agar kolom kiri dan kanan berdampingan */
     display: flex; 
-    
-    /* Rata tengah vertikal */
     align-items: center; 
-    
-    /* Memberi jarak di antara kedua kolom */
     justify-content: space-between; 
-    
     gap: 50px;
     max-width: 1200px; 
     margin: 0 auto;
     padding: 0 40px;
 }
-
-/* --- Mengatur Lebar Kolom --- */
 .hero-left {
-    /* Kolom kiri mengambil setengah lebar */
     flex: 1; 
     max-width: 50%;
 }
 
 .hero-right {
-    /* Kolom kanan mengambil setengah lebar */
     flex: 1;
     max-width: 50%;
-    display: flex; /* Tambahan flex untuk pusatkan gambar */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -545,46 +381,36 @@ a {
 
 .btn {
     padding: 12px 25px;
-    
-    /* Ubah border-radius agar lebih melengkung */
-    border-radius: 10px; /* Nilai sekitar 8px-12px biasanya cocok */
-    
+    border-radius: 10px;
     font-weight: 500;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-    
-    /* Pastikan border ada agar tombol outline bisa tampil */
     border: 1px solid transparent; 
 }
 
-/* --- Tombol Biru Utama (Talk to Us) --- */
 .btn-primary-blue {
     background-color: var(--primary-blue);
     color: white;
-    border-color: var(--primary-blue); /* Border warna biru */
+    border-color: var(--primary-blue);
 }
 
 .btn-primary-blue:hover {
-    background-color: #355394; /* Sedikit lebih gelap */
+    background-color: #355394;
     border-color: #355394;
 }
 
-/* --- Tombol Outline (Explore all Features) --- */
 .btn-outline-blue {
     background-color: transparent;
-    
-    /* Warna teks dan border adalah primary-blue */
     color: var(--primary-blue); 
-    border-color: var(--primary-blue); /* Border warna biru */
-    
+    border-color: var(--primary-blue);
     font-weight: 500;
 }
 
 .btn-outline-blue:hover {
-    background-color: var(--primary-blue); /* Latar belakang biru saat hover */
-    color: white; /* Teks putih saat hover */
+    background-color: var(--primary-blue);
+    color: white;
 }
 
 .btn-outline-blue i {
@@ -596,24 +422,8 @@ a {
     margin-left: 12px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Client Logo Section Styling --- */
-
+/* ========================================================================= CLIENT LOGO ============================================================================== */
 .client-logo-section {
-    /* Gunakan latar belakang biru muda yang sama dengan Announcement Bar */
     background-color: #f0f4ff; 
     padding: 50px 0;
 }
@@ -628,9 +438,8 @@ a {
     padding: 0 40px;
 }
 
-/* Kolom Teks Kiri */
 .client-text {
-    flex-basis: 30%; /* Beri ruang yang cukup untuk teks */
+    flex-basis: 30%;
     font-size: 16px;
     line-height: 1.6;
     color: var(--text-dark);
@@ -640,28 +449,23 @@ a {
     margin: 0;
 }
 
-/* Kontainer Logo */
 .client-logo-marquee-wrapper {
-    flex-basis: 70%; /* Beri lebih banyak ruang untuk logo */
-    overflow: hidden; /* Penting: menyembunyikan logo di luar area pandang */
+    flex-basis: 70%; 
+    overflow: hidden; 
 }
 
 .client-logo-marquee {
     display: flex;
     align-items: center;
-    
-    /* Lebar total harus dua kali lipat dari konten karena ada duplikasi logo */
     width: max-content; 
-    
-    /* Menerapkan Animasi */
-    animation: scroll-left 30s linear infinite; /* 30s = durasi, linear = kecepatan konstan, infinite = berulang */
+    animation: scroll-left 30s linear infinite;
 }
 
 .client-logo-item {
-    height: 35px; /* Atur tinggi logo */
+    height: 35px;
     width: auto;
-    margin-right: 50px; /* Jarak antar logo */
-    flex-shrink: 0; /* Penting: mencegah logo mengecil */
+    margin-right: 50px; 
+    flex-shrink: 0;
     opacity: 0.6;
     transition: opacity 0.3s;
 }
@@ -670,50 +474,24 @@ a {
     opacity: 1;
 }
 
-/* --- Definisi Animasi CSS Keyframes --- */
 @keyframes scroll-left {
     from {
-        /* Mulai dari posisi 0 */
         transform: translateX(0);
     }
     to {
-        /* Pindahkan ke kiri sebesar 50% (lebar satu set logo) */
-        /* Ini membuat loop kembali ke Set Logo 2 yang sekarang berada di posisi Set Logo 1 */
         transform: translateX(-50%);
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Role-Based Content Section Styling --- */
-
+/* ========================================================================= ROLE CONTENT ============================================================================== */
 .role-content-section {
     padding: 100px 0;
     background-color: white;
 }
 
-/* Judul dan Deskripsi */
 .role-header-text {
     max-width: 900px;
-    margin: 0 auto 60px auto; /* Jarak bawah dari tab */
+    margin: 0 auto 60px auto;
 }
 
 .role-title {
@@ -730,22 +508,20 @@ a {
     margin-bottom: 0;
 }
 
-/* Tab Navigasi */
 .role-tabs-nav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Agar tab bisa turun baris jika viewport kecil */
+    flex-wrap: wrap; 
     gap: 15px;
     margin-bottom: 60px;
 }
 
 .tab-btn {
-    /* Gaya Dasar Tombol */
     background-color: transparent;
     color: var(--text-dark);
     border: 1px solid var(--border-color);
     padding: 10px 20px;
-    border-radius: 50px; /* Bentuk kapsul */
+    border-radius: 50px; 
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -757,14 +533,12 @@ a {
     color: var(--primary-blue);
 }
 
-/* Gaya Tombol Aktif */
 .tab-btn.active {
-    background-color: #f0f4ff; /* Latar belakang biru muda */
+    background-color: #f0f4ff; 
     border-color: #f0f4ff;
     color: var(--primary-blue);
 }
 
-/* Gaya Tombol Highlight (C-Suite) */
 .tab-btn.tab-highlight {
     background-color: var(--primary-blue);
     border-color: var(--primary-blue);
@@ -777,15 +551,12 @@ a {
     color: white;
 }
 
-
-/* Area Visual/Screenshot */
 .role-visual-area {
-    /* Background area visual jika diperlukan */
     padding-top: 20px;
 }
 
 .role-screenshot-wrapper {
-    max-width: 1100px; /* Batas lebar screenshot */
+    max-width: 1100px; 
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -797,80 +568,52 @@ a {
     height: auto;
     display: block;
 }
-/* ========================= */
-/* Styling container tombol */
 .role-buttons {
-    /* Untuk menengahkan tombol secara horizontal di dalam div */
     text-align: center; 
-    padding: 20px 0; /* Tambahkan sedikit jarak atas dan bawah */
+    padding: 20px 0;
 }
 
-/* Gaya dasar untuk kedua tombol */
 .btn-role {
     display: inline-block;
     padding: 10px 20px;
-    margin: 0 10px; /* Jarak antar tombol */
-    border-radius: 6px; /* Sudut sedikit membulat */
+    margin: 0 10px;
+    border-radius: 6px;
     font-size: 16px;
-    font-weight: 500; /* Sedikit tebal, seperti di gambar */
-    text-decoration: none; /* Hilangkan garis bawah default untuk link */
+    font-weight: 500; 
+    text-decoration: none; 
     cursor: pointer;
-    /* Efek transisi untuk tampilan yang lebih mulus saat hover */
     transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-/* Gaya untuk tombol utama ("Book a demo") - Latar Belakang Biru */
 .primary-btn {
-    background-color: #3b74e6; /* Biru tua yang mendekati gambar */
-    color: #ffffff; /* Teks Putih */
-    border: 1px solid #3b74e6; /* Border sama dengan latar belakang */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+    background-color: #3b74e6;
+    color: #ffffff;
+    border: 1px solid #3b74e6; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Gaya hover untuk tombol utama */
 .primary-btn:hover {
-    background-color: #2b61d5; /* Warna biru sedikit lebih gelap saat hover */
+    background-color: #2b61d5;
     border-color: #2b61d5;
 }
 
-/* Gaya untuk tombol sekunder ("Explore more features") - Latar Belakang Putih/Transparan */
 .secondary-btn {
     background-color: #ffffff;
-    color: #3b74e6; /* Teks Biru */
-    border: 1px solid #cdd0d5; /* Border abu-abu muda, tipis, yang terlihat di gambar */
-    /* Padding dan radius mungkin perlu sedikit penyesuaian untuk border yang lebih halus */
-}
-
-/* Gaya hover untuk tombol sekunder */
-.secondary-btn:hover {
-    border-color: #3b74e6; /* Border menjadi biru saat di-hover */
     color: #3b74e6; 
-    /* Mungkin perlu sedikit bayangan atau perubahan background jika diperlukan */
+    border: 1px solid #cdd0d5; 
 }
 
-/* Gaya untuk panah (jika Anda ingin mengontrolnya lebih spesifik) */
+.secondary-btn:hover {
+    border-color: #3b74e6; 
+    color: #3b74e6; 
+}
+
 .secondary-btn::after {
-    /* Pastikan panah menempel pada teks */
     margin-left: 5px;
-    content: ''; /* Karena panah sudah ada di HTML, ini tidak diperlukan kecuali Anda ingin panah sebagai pseudo-element */
+    content: '';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 1. GO BEYOND SECTION STYLES          */
+/* ========================================================================= GO BEYOND ============================================================================== */
 .go-beyond-section {
     background-color: #2b56af; 
     color: #ffffff;
@@ -886,7 +629,7 @@ a {
     font-size: 2.2rem; 
     font-weight: 700; 
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 .main-description {
     font-size: 1.1rem;
@@ -894,7 +637,6 @@ a {
     opacity: 1; 
     color: #ffffff;
 }
-/* 2. CARD GRID & FEATURE CARD STYLES   */
 .card-grid {
     display: grid;
     max-width: 1050px; 
@@ -945,32 +687,16 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Styling for the Award Section based on the image */
-
+/* ========================================================================= AWARDS AND CERTIFICATION ============================================================================== */
 .award-section {
-    /* Background abu-abu muda untuk keseluruhan section */
     background-color: #f5f7fa; 
     padding: 80px 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Container for layout (Flexbox for side-by-side columns) */
 .award-section .container {
     max-width: 1200px;
     margin: 0 auto;
-    /* Padding horizontal untuk mencegah konten menempel atau terpotong di tepi layar */
     padding: 0 15px; 
     display: flex; 
     gap: 40px; 
@@ -978,9 +704,7 @@ a {
     flex-wrap: nowrap; 
 }
 
-/* --- Left Content Area (Awards & Certifications Text) --- */
 .award-content {
-    /* Biarkan ia menggunakan sisa ruang dengan growth factor 1 */
     flex: 1 1 auto; 
     max-width: 60%; 
     padding-top: 20px; 
@@ -1001,7 +725,6 @@ a {
     margin-bottom: 30px;
 }
 
-/* Button Styling */
 .award-button {
     display: inline-flex;
     align-items: center;
@@ -1011,7 +734,6 @@ a {
     text-decoration: none;
     color: #4b6cb7;
     border: 2px solid #4b6cb7;
-    /* Sudut melengkung untuk tombol */
     border-radius: 8px; 
     transition: background-color 0.3s, color 0.3s;
 }
@@ -1026,38 +748,28 @@ a {
     font-weight: bold;
 }
 
-/* --- Right Content Area (Award Card/Carousel) --- */
 .award-carousel-container {
-    /* Memaksa lebar 400px dan mencegah penyusutan */
     flex: 0 0 400px; 
     width: 400px; 
     position: relative;
     overflow: hidden; 
 }
 
-/* Kontainer yang menampung kartu carousel (untuk penumpukan) */
 .award-carousel-track {
     position: relative;
-    height: 450px; /* Jaga tinggi agar konten tidak melonjak */
+    height: 450px; 
 }
 
 .award-card {
-    /* Background putih untuk kartu penghargaan */
     background-color: #ffffff;
     padding: 30px;
-    /* Sudut melengkung untuk kartu */
     border-radius: 12px;
-    /* Bayangan untuk memberikan efek terangkat/border visual */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
     text-align: center;
-    
-    /* KUNCI CAROUSEL: Menumpuk kartu di posisi yang sama */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    
-    /* KUNCI CAROUSEL: Transisi dan Visibilitas (Fade Effect) */
     opacity: 0; 
     visibility: hidden; 
     transition: opacity 0.6s ease-in-out; 
@@ -1077,7 +789,6 @@ a {
 }
 
 .award-logo {
-    /* KUNCI: Batasi ukuran gambar logo */
     width: 120px; 
     height: auto; 
     max-width: 100%;
@@ -1097,7 +808,6 @@ a {
     text-align: left;
 }
 
-/* Carousel Indicators */
 .carousel-indicators {
     position: absolute;
     bottom: -30px;
@@ -1123,7 +833,6 @@ a {
     border-color: #4b6cb7;
 }
 
-/* --- Responsive adjustments --- */
 @media (max-width: 992px) {
     .award-section .container {
         flex-direction: column; 
@@ -1143,32 +852,35 @@ a {
     }
 
     .award-carousel-container {
-        /* Memastikan kolom ini menggunakan lebar penuh (90%) di mobile/tablet */
         flex: 0 0 90%; 
         width: 90%;
         max-width: 450px; 
     }
 }
 
+/* ========================================================================= EXPERIENCE (MITRA TERPERCAYA) ============================================================================== */
+.trusted-container {
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 50px; 
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* experience */
-/* ======================================= */
-/* REVISI AKHIR: Memastikan Komponen Berada di Tengah Halaman */
-/* ======================================= */
+@media (max-width: 1024px) {
+    .trusted-container {
+        padding-left: 30px; 
+        padding-right: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .trusted-container {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+}
 
 .trusted-partner-section {
     background-color: #3b5998; 
@@ -1177,34 +889,9 @@ a {
     font-family: Arial, sans-serif; 
 }
 
-/* CONTAINER: FOKUS UTAMA PERBAIKAN */
-.container {
-    /* Mereduksi max-width agar lebih sesuai dengan konten halaman umum */
-    max-width: 1200px; 
-    /* Memastikan komponen berada di tengah halaman (horizontal) */
-    margin-left: auto; 
-    margin-right: auto;
-    /* Mengurangi padding horizontal agar lebih rapat ke tepi wadah halaman */
-    padding-left: 50px; 
-    padding-right: 50px;
-}
-
-@media (max-width: 1024px) {
-    .container {
-        padding-left: 30px; 
-        padding-right: 30px;
-    }
-}
-@media (max-width: 768px) {
-    .container {
-        padding-left: 20px; 
-        padding-right: 20px;
-    }
-}
-
-/* Logo dan Tag */
 .logo-group {
     margin-bottom: 30px; 
+    align-self: flex-start;
 }
 
 .logos {
@@ -1224,14 +911,10 @@ a {
     font-weight: 300;
 }
 
-/* Konten Utama (Teks) */
 .text-content {
-    /* Lebar konten yang sama dengan lebar statistik di bawahnya */
-    max-width: 800px; 
+    max-width: 1800px; /* diubah menjadi 1800 px dari yang sebelumnya 800 px */
     margin-bottom: 120px; 
-    /* Memastikan teks rata kiri di dalam container yang kini sentral */
-    margin-left: 0; 
-    margin-right: auto;
+    align-self: flex-start;
 }
 
 .main-title {
@@ -1254,16 +937,13 @@ a {
     font-weight: 300;
 }
 
-/* Statistik Wrapper */
 .stats-wrapper {
-    /* Batasi lebar statistik */
-    max-width: 950px; 
-    /* Memastikan statistik rata kiri di dalam container yang kini sentral */
-    margin-left: 0; 
+    max-width: 2000px; /* sebelumnya 950 px menjadi 2000 px*/
+    align-self: flex-start;
+    margin-left: auto;
     margin-right: auto;
 }
 
-/* Statistik Grid */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -1287,7 +967,7 @@ a {
 
 @media (min-width: 768px) {
     .stat-value {
-        font-size: 56px;
+        font-size: 40px;
     }
 }
 
@@ -1300,36 +980,8 @@ a {
     max-width: 180px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================= */
-/* CSS untuk Komponen Customer Stories */
-/* ======================================= */
-
+/* ========================================================================= CUSTOMER STORIES ============================================================================== */
 .customer-stories-section {
-    /* Background Putih / Abu-abu terang */
-    /* background-color: #f7f7f7;  */
     background-color: #ffffff; 
     padding: 100px 0; 
     font-family: Arial, sans-serif; 
@@ -1337,7 +989,6 @@ a {
 }
 
 .container {
-    /* Memastikan komponen berada di tengah halaman */
     max-width: 1200px; 
     margin-left: auto;
     margin-right: auto;
@@ -1345,7 +996,6 @@ a {
     padding-right: 20px;
 }
 
-/* Header Section */
 .stories-header {
     text-align: center;
     margin-bottom: 60px;
@@ -1365,7 +1015,6 @@ a {
     color: #555;
 }
 
-/* Main Testimonial Card */
 .main-testimonial-card {
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -1407,7 +1056,7 @@ a {
 .read-more-link {
     display: block;
     text-align: center;
-    color: #4b8df8; /* Warna biru */
+    color: #4b8df8;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -1418,7 +1067,6 @@ a {
     color: #2a61c5;
 }
 
-/* Story Cards Grid (Bagian Bawah) */
 .story-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1446,7 +1094,7 @@ a {
 
 .story-image-placeholder {
     height: 180px;
-    background-color: #eee; /* Placeholder warna */
+    background-color: #eee;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1469,7 +1117,7 @@ a {
     font-size: 16px;
     font-weight: 600;
     padding: 15px 15px 10px 15px;
-    min-height: 60px; /* Agar tinggi card konsisten */
+    min-height: 60px;
     line-height: 1.4;
 }
 
@@ -1486,29 +1134,7 @@ a {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================= */
-/* CSS untuk Komponen Insights & Resources */
-/* ======================================= */
-
+/* ========================================================================= INSIGHT RESOURCES ============================================================================== */
 .insights-resources-section {
     background-color: #ebeff8;
     padding: 100px 0; 
@@ -1545,10 +1171,8 @@ a {
     font-weight: 300;
 }
 
-/* Resource Cards Grid */
 .resource-cards-grid {
     display: grid;
-    /* Tata letak 3 kolom di desktop */
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
@@ -1556,19 +1180,16 @@ a {
 
 @media (max-width: 992px) {
     .resource-cards-grid {
-        /* Tata letak 2 kolom di tablet */
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 600px) {
     .resource-cards-grid {
-        /* Tata letak 1 kolom di mobile */
         grid-template-columns: 1fr;
     }
 }
 
 .resource-card {
-    /* Styling card agar terlihat terpisah */
     background-color: #fff;
     border-radius: 6px;
     overflow: hidden;
@@ -1576,7 +1197,6 @@ a {
 }
 
 .resource-image-container {
-    /* Menentukan batas tinggi gambar */
     height: 200px; 
     overflow: hidden;
     display: flex;
@@ -1586,10 +1206,9 @@ a {
 }
 
 .resource-image {
-    /* Gambar mengisi wadah */
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Memastikan gambar memenuhi wadah tanpa terdistorsi */
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -1599,7 +1218,7 @@ a {
 
 .resource-content {
     padding: 20px 20px 15px 20px;
-    min-height: 200px; /* Memberi tinggi minimum agar card rata */
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1624,11 +1243,11 @@ a {
 .explore-link {
     display: inline-block;
     font-size: 14px;
-    color: #4b8df8; /* Warna biru */
+    color: #4b8df8;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
-    margin-top: auto; /* Mendorong link ke bawah */
+    margin-top: auto;
 }
 
 .explore-link:hover {
@@ -1636,27 +1255,8 @@ a {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================= */
-/* CSS untuk Komponen HR Next Level CTA */
-/* ======================================= */
-
+/* ========================================================================= CALL TO ACTION (HUBUNGI KAMI SEKARANG) ============================================================================== */
 .hr-cta-section {
-    /* Background abu-abu terang */
     background-color: #f7f9fc; 
     padding: 100px 0; 
     font-family: Arial, sans-serif; 
@@ -1664,7 +1264,6 @@ a {
 }
 
 .container {
-    /* Memastikan komponen berada di tengah halaman */
     max-width: 1200px; 
     margin-left: auto;
     margin-right: auto;
@@ -1679,9 +1278,7 @@ a {
     gap: 40px;
 }
 
-/* Kolom Teks */
 .cta-text-column {
-    /* Batasi lebar kolom teks agar tidak terlalu panjang */
     max-width: 500px; 
     padding-right: 20px;
 }
@@ -1703,7 +1300,7 @@ a {
 
 .cta-button {
     display: inline-block;
-    background-color: #4b8df8; /* Warna biru */
+    background-color: #4b8df8; 
     color: white;
     padding: 12px 30px;
     border-radius: 4px;
@@ -1718,24 +1315,20 @@ a {
     background-color: #2a61c5;
 }
 
-/* Kolom Gambar */
 .cta-image-column {
-    /* Memastikan kolom gambar tidak melebar terlalu jauh */
     max-width: 500px; 
-    flex-shrink: 0; /* Mencegah gambar menyusut */
+    flex-shrink: 0;
 }
 
 .cta-mockup-image {
-    /* Gambar mengisi lebar wadahnya dan menjaga rasio aspek */
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Responsif */
 @media (max-width: 992px) {
     .cta-content-wrapper {
-        flex-direction: column-reverse; /* Pindahkan teks ke atas gambar di tablet/mobile */
+        flex-direction: column-reverse;
         text-align: center;
     }
     
@@ -1756,99 +1349,13 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Product Highlight Cards Section Styling --- */
-/*
-.product-highlight-section {
-    padding: 80px 0;
-    background-color: #f7f9fd; 
-}
-
-.highlight-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 30px; 
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.highlight-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    padding-bottom: 25px; 
-}
-
-.card-image-wrapper {
-    height: 200px; 
-    overflow: hidden;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #e9e9e9; 
-}
-
-.highlight-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
-}
-
-.card-content {
-    padding: 0 25px;
-}
-
-.card-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.card-description {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-light);
-    margin-bottom: 0;
-}
-*/
-/* ==================================================================================== */
-/* --- Mengontrol Kontainer Grid --- */
-
 .highlight-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
-    
-    /* 🚨 Kontrol Batas Lebar Maksimum untuk Grid (SANGAT PENTING) */
-    /* Pastikan lebar maksimum ini lebih kecil dari container utama Anda (misalnya 900px) */
     max-width: 900px; 
     margin: 0 auto; 
 }
-
-/* --- Mengontrol Card Wrapper dan Gambar --- */
 
 .highlight-card {
     background-color: white;
@@ -1856,14 +1363,11 @@ a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     padding-bottom: 20px; 
-    
-    /* Batasi agar kartu tidak tumbuh terlalu besar di ruang kosong (jika ada) */
     max-width: 100%; 
 }
 
 .card-image-wrapper {
-    /* Mengurangi Tinggi Wrapper menjadi lebih ringkas */
-    height: 200px; /* Diperkecil lagi dari 250px sebelumnya */
+    height: 200px; 
     overflow: hidden;
     margin-bottom: 15px;
     display: flex;
@@ -1873,57 +1377,29 @@ a {
 }
 
 .highlight-image {
-    /* Kunci: Pastikan gambar mengisi ruang wrapper dan dipotong jika perlu */
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ganti 'cover' menjadi 'contain' atau biarkan 'cover' tergantung tampilan. */
-    /* Jika gambar terlihat terlalu zoom/crop, gunakan 'contain' */
-    /* Jika ingin gambar mengisi penuh ruang, gunakan 'cover' dan pastikan rasionya benar */
+    object-fit: contain;
     display: block;
 }
 
-/* --- Mengontrol Isi Teks --- */
 .card-title {
-    font-size: 20px; /* Sedikit perkecil ukuran judul */
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .card-description {
-    font-size: 14px; /* Perkecil ukuran teks deskripsi */
+    font-size: 14px;
     line-height: 1.5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Footer DataOn Styling --- */
-
+/* ========================================================================= FOOTER ============================================================================== */
 :root {
-    /* Tambahkan variabel warna footer */
-    --footer-bg: #293858; /* Warna biru gelap footer */
-    --footer-text-light: #C0C8E1; /* Warna teks tautan/link */
-    --footer-text-title: #ffffff; /* Warna teks judul kolom */
-    --footer-link-hover: #ffffff; /* Warna hover link */
+    --footer-bg: #293858;
+    --footer-text-light: #C0C8E1; 
+    --footer-text-title: #ffffff; 
+    --footer-link-hover: #ffffff; 
     --social-icon-bg: #4a5c82;
     --social-icon-hover-bg: #354462;
 }
@@ -1939,15 +1415,13 @@ a {
 .footer-content-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px; /* Batasi lebar agar konten terpusat */
+    max-width: 1200px; 
     margin: 0 auto;
-    padding: 0 40px 50px 40px; /* Padding di sekitar konten */
+    padding: 0 40px 50px 40px;
 }
 
-/* --- Kolom 1 (Logo & Sertifikasi) --- */
-
 .footer-col-1 {
-    flex-basis: 30%; /* Berikan lebar lebih besar untuk kolom pertama */
+    flex-basis: 30%; 
     padding-right: 30px;
 }
 
@@ -1956,7 +1430,7 @@ a {
 }
 
 .dataon-logo {
-    width: 150px; /* Atur lebar logo */
+    width: 150px; 
     height: auto;
     display: block;
     margin-bottom: 5px;
@@ -1977,7 +1451,6 @@ a {
     font-size: 15px;
 }
 
-/* Sertifikasi */
 .footer-section {
     margin-bottom: 30px;
 }
@@ -1992,22 +1465,21 @@ a {
 .certificate-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px; /* Jarak antar badge */
+    gap: 8px; 
 }
 
 .badge {
     width: 40px;
     height: 40px;
-    background-color: white; /* Badge warna putih */
+    background-color: white;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--footer-bg); /* Warna ikon di dalam badge */
+    color: var(--footer-bg);
     font-size: 20px;
 }
 
-/* Social Media */
 .social-links {
     display: flex;
     gap: 10px;
@@ -2029,10 +1501,8 @@ a {
     background-color: var(--social-icon-hover-bg);
 }
 
-/* --- Kolom Tautan (2-5) --- */
-
 .footer-column {
-    flex-basis: 15%; /* Berikan lebar yang sama untuk kolom tautan */
+    flex-basis: 15%;
     padding: 0 10px;
 }
 
@@ -2063,9 +1533,6 @@ a {
 .footer-links a:hover {
     color: var(--footer-link-hover);
 }
-
-
-/* --- Footer Bawah (Copyright) --- */
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);

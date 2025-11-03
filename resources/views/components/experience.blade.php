@@ -1,16 +1,13 @@
 <section class="trusted-partner-section">
-    <div class="container">
-        {{-- Logo Section --}}
+    <div class="trusted-container"> 
+
         <div class="logo-group">
             <div class="logos">
-                {{-- Ganti path logo ini dengan path aktual di proyek Laravel Anda --}}
                 <img src="{{ asset('images/logo-putih-dataon.png') }}" alt="DataOn Logo" class="logo-image">
                 <img src="{{ asset('images/sunfish-hr-logo-putih.png') }}" alt="SunFish Logo" class="logo-image">
             </div>
-            {{-- <p class="company-tag">A HUMANICA COMPANY</p> --}}
         </div>
 
-        {{-- Main Text Section --}}
         <div class="text-content">
             <h2 class="main-title">
                 Mitra Tepercaya dalam Pengelolaan SDM
@@ -21,7 +18,7 @@
         </div>
 
         {{-- Statistics Section --}}
-        <div class="stats-wrapper"> 
+        <div class="stats-wrapper">
             <div class="stats-grid">
                 @php
                     $stats = [

@@ -22,12 +22,21 @@ Route::get('/', function () {
 */
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/demo', function () {
+    return view('demo');
+});
+
+Route::get('/demo', [HomeController::class, 'demo'])->name('demo'); 
+
 Route::get('/about', function () {
     return view('about');
 });
+
 Route::get('/services', function () {
     return view('services');
 });
+
 Route::get('/contact', function () {
     return view('contact');
 });

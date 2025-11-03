@@ -65,7 +65,57 @@
                         </div>
                     </li>
                     <li class="has-dropdown">
-                        <span>Company</span>
+                        <span>Services</span>
+                        <div class="submenu mega-submenu"> 
+                            <div class="mega-menu-left">
+                                <div class="mega-menu-group">
+                                    <a href="#" class="mega-menu-link active-link">Our Journey</a>
+                                </div>
+                                <div class="mega-menu-group">
+                                    <a href="#" class="mega-menu-link">Whistleblowing <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="mega-menu-link">Governance <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="mega-menu-link">Career <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="mega-menu-right">
+                                <div class="right-header">Our Journey</div>
+                                <ul class="right-links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Vision & Mission</a></li>
+                                    <li><a href="#">Award & Certification</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <span>Resources</span>
+                        <div class="submenu mega-submenu"> 
+                            <div class="mega-menu-left">
+                                <div class="mega-menu-group">
+                                    <a href="#" class="mega-menu-link active-link">Our Journey</a>
+                                </div>
+                                <div class="mega-menu-group">
+                                    <a href="#" class="mega-menu-link">Whistleblowing <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="mega-menu-link">Governance <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="mega-menu-link">Career <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="mega-menu-right">
+                                <div class="right-header">Our Journey</div>
+                                <ul class="right-links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Vision & Mission</a></li>
+                                    <li><a href="#">Award & Certification</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <span>Customers</span>
                         <div class="submenu mega-submenu"> 
                             <div class="mega-menu-left">
                                 <div class="mega-menu-group">
@@ -114,11 +164,43 @@
                             </div>
                         </div>
                     </li>
+                    <li class="has-dropdown">
+                        <span>Contact Us</span>
+                        <div class="submenu mega-submenu"> 
+                            <div class="mega-menu-left">
+                                <div class="mega-menu-group">
+                                    <a href="#" class="mega-menu-link active-link">Our Journey</a>
+                                </div>
+                                <div class="mega-menu-group">
+                                    <a href="#" class="mega-menu-link">Whistleblowing <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="mega-menu-link">Governance <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="mega-menu-link">Career <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="mega-menu-right">
+                                <div class="right-header">Our Journey</div>
+                                <ul class="right-links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Vision & Mission</a></li>
+                                    <li><a href="#">Award & Certification</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
+            {{-- 
             <button class="book-demo-btn">
                 Book a demo
             </button>
+             --}}
+
+            <button class="book-demo-btn" onclick="window.location.href = '{{ url('/demo') }}';">
+                Book a demo
+            </button>
+
         </div>
     </header>
     </body>

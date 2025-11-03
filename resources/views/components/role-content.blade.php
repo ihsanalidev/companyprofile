@@ -24,16 +24,12 @@
 
     </div>
 
-
-
-
-
     <div id="content-everyone" class="tab-pane active-pane">
         <div class="highlight-cards-grid">
             
             <div class="highlight-card">
                 <div class="card-image-wrapper">
-                    <img src="{{ asset('images/1.jpg') }}" alt="SunFish Mobile Interface" class="highlight-image">
+                    <img src="{{ asset('images/UI1.webp') }}" alt="SunFish Mobile Interface" class="highlight-image">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">SunFish Mobile</h3>
@@ -46,7 +42,7 @@
 
             <div class="highlight-card">
                 <div class="card-image-wrapper">
-                    <img src="{{ asset('images/2.jpg') }}" alt="Employee Self-Service Interface" class="highlight-image">
+                    <img src="{{ asset('images/UI2.webp') }}" alt="Employee Self-Service Interface" class="highlight-image">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Employee Self-Service</h3>
@@ -64,7 +60,7 @@
         <div class="highlight-cards-grid">
             <div class="highlight-card">
                 <div class="card-image-wrapper">
-                    <img src="{{ asset('images/3.jpg') }}" alt="HR Payroll" class="highlight-image">
+                    <img src="{{ asset('images/UI3.webp') }}" alt="HR Payroll" class="highlight-image">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Advanced Payroll</h3>
@@ -73,7 +69,7 @@
             </div>
             <div class="highlight-card">
                 <div class="card-image-wrapper">
-                    <img src="{{ asset('images/4.jpg') }}" alt="HR Analytics" class="highlight-image">
+                    <img src="{{ asset('images/UI4.webp') }}" alt="HR Analytics" class="highlight-image">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Recruitment & Onboarding</h3>
@@ -87,7 +83,7 @@
         <div class="highlight-cards-grid">
             <div class="highlight-card">
                 <div class="card-image-wrapper">
-                    <img src="{{ asset('images/5.jpg') }}" alt="HR Payroll" class="highlight-image">
+                    <img src="{{ asset('images/UI5.webp') }}" alt="HR Payroll" class="highlight-image">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Advanced Payroll</h3>
@@ -96,7 +92,7 @@
             </div>
             <div class="highlight-card">
                 <div class="card-image-wrapper">
-                    <img src="{{ asset('images/6.jpg') }}" alt="HR Analytics" class="highlight-image">
+                    <img src="{{ asset('images/UI6.webp') }}" alt="HR Analytics" class="highlight-image">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Recruitment & Onboarding</h3>

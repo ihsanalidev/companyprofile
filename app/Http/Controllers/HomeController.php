@@ -30,4 +30,9 @@ class HomeController extends Controller
         // return -> mengirim tampilan itu ke broser, jadi user bisa melihat homepage
         // view('home') -> Laravel mencari file Blade template di : resources/views/home.blade.php
     }
+
+    public function demo()
+    {
+        return view('demo');
+    }
 }
