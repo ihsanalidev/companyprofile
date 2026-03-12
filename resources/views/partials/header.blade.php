@@ -37,32 +37,20 @@
         <div class="main-header">
             <div class="logo-and-nav">
                 <div class="logo">
-                    <img src="{{ asset('images/logo-dataon.png') }}" alt="SunFish Logo" class="logo-img">
+                    <a href="{{ url('/#') }}">
+                        <img src="{{ asset('images/logo-dataon.png') }}" alt="SunFish Logo" class="logo-img">
+                    </a>
                 </div>
 
                 <ul class="navigation">
                     <li class="has-dropdown">
                         <span>Products</span>
-                        <div class="submenu mega-submenu"> 
-                            <div class="mega-menu-left">
-                                <div class="mega-menu-group">
-                                    <a href="#" class="mega-menu-link active-link">Products</a>
-                                </div>
-                                <div class="mega-menu-group">
-                                    <a href="#" class="mega-menu-link">SunFish HR <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="mega-menu-right">
-                                <div class="right-header">SunFish HR</div>
-                                <ul class="right-links">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Vision & Mission</a></li>
-                                    <li><a href="#">Award & Certification</a></li>
-                                    <li><a href="#">Leadership</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="">HR Core</a></li>
+                            <li><a href="">Enterprise Payroll</a></li>
+                            <li><a href="">Training</a></li>
+                            <li><a href="">Recruitment</a></li>
+                        </ul>
                     </li>
                     <li class="has-dropdown">
                         <span>Services</span>
@@ -190,6 +178,7 @@
                         </div>
                     </li>
                 </ul>
+
             </div>
             {{-- 
             <button class="book-demo-btn">

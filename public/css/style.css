@@ -67,13 +67,6 @@ a {
     padding: 5px 0;
 }
 
-.dropdown span::after {
-    content: ' \2304';
-    margin-left: 5px;
-    font-size: 12px;
-    vertical-align: middle;
-}
-
 .contact-us {
     padding: 5px 0;
     color: var(--text-dark);
@@ -124,13 +117,6 @@ a {
 
 .navigation li:hover {
     color: var(--primary-blue);
-}
-
-.navigation li span::after {
-    content: ' \2304';
-    margin-left: 5px;
-    font-size: 10px;
-    vertical-align: middle;
 }
 
 .book-demo-btn {
@@ -232,13 +218,6 @@ a {
 
 .navigation li:hover {
     color: var(--primary-blue);
-}
-
-.navigation li span::after {
-    content: ' \2304'; 
-    margin-left: 5px;
-    font-size: 10px;
-    vertical-align: middle;
 }
 
 .submenu {
