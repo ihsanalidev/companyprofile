@@ -11,6 +11,7 @@ copy .env.example .env
 php artisan key:generate
 
 - Run project
+open Laragon > Laragon terminal
 BACKEND :
 php artisan serve
 FRONTEND :

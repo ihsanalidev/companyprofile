@@ -20,10 +20,9 @@
             <div class="vertical-divider"></div>
             
             <div class="dropdown-container">
-                <input type="checkbox" id="lang-toggle" class="dropdown-checkbox" hidden>
-                <label for="lang-toggle" class="dropdown-toggle">
-                    Indonesia (English)
-                </label>
+                <button class="dropdown-toggle">
+                    Indonesia (English) &#9662
+                </button>
                 <ul class="dropdown-menu">
                     <li><a href="#">Indonesia (English)</a></li>
                     <li><a href="#">English (Global)</a></li>
@@ -91,14 +90,8 @@
                         </ul>
                     </li>
                 </ul>
-
             </div>
-            {{-- 
-            <button class="book-demo-btn">
-                Book a demo
-            </button>
-             --}}
-
+            
             <button class="book-demo-btn" onclick="window.location.href = '{{ url('/demo') }}';">
                 Book a demo
             </button>
