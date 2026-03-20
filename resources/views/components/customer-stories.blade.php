@@ -13,7 +13,7 @@
 
         {{-- Main Testimonial Card --}}
         <div class="main-testimonial-card">
-            <p class="company-logo-text">potato head bali</p>
+            <p class="company-logo-text">Potato Head Bali</p>
             <div class="quote-content">
                 <p class="quote-text">
                     "Sejak menggunakan SunFish, kami melihat peningkatan signifikan dalam praktik HR, 

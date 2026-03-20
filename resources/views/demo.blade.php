@@ -8,6 +8,6 @@
 
     @include('components.offices')
 
-    @include('components.contact')
+    @include('components.hr-next-level-cta')
 
 @endsection

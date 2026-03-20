@@ -96,7 +96,7 @@
 
         <div class="cards" data-role="hr">
             <div class="card-image-container">
-                <img src="{{ asset('images/UI6.webp') }}" alt="Modern UI/UX" class="card-image">
+                <img src="{{ asset('images/UI1.webp') }}" alt="Modern UI/UX" class="card-image">
             </div>
             <div class="card-text-container">
                 <h3 class="card-title">Modern UI/UX</h3>

@@ -12,14 +12,15 @@
             <div class="footer-section">
                 <h4 class="section-title">Security & Certificate</h4>
                 <div class="certificate-badges">
-                    <div class="badge"><i class="fas fa-certificate"></i></div>
-                    <div class="badge"><i class="fas fa-shield-alt"></i></div>
-                    <div class="badge"><i class="fas fa-lock"></i></div>
-                    <div class="badge"><i class="fas fa-sitemap"></i></div>
-                    <div class="badge"><i class="fas fa-file-invoice"></i></div>
-                    <div class="badge"><i class="fas fa-server"></i></div>
-                    <div class="badge"><i class="fas fa-microchip"></i></div>
-                    <div class="badge"><i class="fas fa-certificate"></i></div>
+                    <div class="badge"><img src="{{ asset('images/certificate1.webp') }}" alt="Certificate 1" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate2.webp') }}" alt="Certificate 2" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate3.webp') }}" alt="Certificate 3" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate4.webp') }}" alt="Certificate 4" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate5.png') }}" alt="Certificate 5" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate6.png') }}" alt="Certificate 6" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate7.webp') }}" alt="Certificate 7" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate8.webp') }}" alt="Certificate 8" class="logo-img"></div>
+                    <div class="badge"><img src="{{ asset('images/certificate9.webp') }}" alt="Certificate 9" class="logo-img"></div>
                 </div>
             </div>
             

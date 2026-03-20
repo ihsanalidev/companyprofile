@@ -13,8 +13,8 @@
         <div class="top-header">
             <div class="contact-info">
                 <i class="fas fa-phone-alt"></i>
-                <a href="tel:+6285218584097" class="phone-number phone-number-1">+62-8521-8584-097</a>
-                <a href="tel:+622122213077" class="phone-number phone-number-1">+62-2122-2130-77</a>
+                <a href="https://wa.me/085156467334?text=Hi,%20I'm%20interested%20and%20would%20like%20to%20know%20more." class="phone-number phone-number-1">+62-851-5646-7334</a>
+                <a href="https://wa.me/085156467334" class="phone-number phone-number-1">+62-2122-2130-77</a>
             </div>
 
             <div class="vertical-divider"></div>
