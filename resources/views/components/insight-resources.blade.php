@@ -5,9 +5,7 @@
         <div class="resources-header">
             <h2 class="resources-title">Insights & Resources</h2>
             <p class="resources-description">
-                Selangkah terdepan dengan wawasan dan tren HR, dan panduan praktis yang dapat 
-                membantu Anda mengontrol kepuasan manajemen sumber daya operasional, maupun 
-                transformasi digital.
+                Stay ahead with expert perspectives, industry trends, and practical guides designed to help you make smarter decisions in HR, operations, and digital transformation.
             </p>
         </div>
 
@@ -17,17 +15,17 @@
                 $resources = [
                     [
                         'tag' => 'Whitepaper', 
-                        'title' => 'Jelajahi beragam eBook berisi wawasan mendalam seputar strategi HR, transformasi digital, dan solusi enterprise.', 
+                        'title' => 'Explore in-depth whitepapers featuring expert insights on HR strategy, digital transformation, and enterprise solutions.', 
                         'image' => 'blog-1.png'
                     ],
                     [
                         'tag' => 'Blog', 
-                        'title' => 'Dapatkan update terbaru seputar tren, tips, dan pemikiran strategis dalam manajemen HR dan teknologi.', 
+                        'title' => 'Stay updated with the latest trends, tips, and thought leadership in HR management and technology.', 
                         'image' => 'blog-2.webp'
                     ],
                     [
                         'tag' => 'Events', 
-                        'title' => 'Ikuti webinar, workshop, dan offline event sebagai media untuk belajar, berjejaring, dan tumbuh bersama komunitas HR.', 
+                        'title' => 'Join our upcoming webinars, workshops, and industry events to learn, connect, and grow with the HR community.', 
                         'image' => 'blog-3.webp'
                     ],
                 ];

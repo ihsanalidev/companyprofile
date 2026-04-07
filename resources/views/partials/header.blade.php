@@ -21,12 +21,11 @@
             
             <div class="dropdown-container">
                 <button class="dropdown-toggle">
-                    Indonesia (English) &#9662
+                    English &#9662
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Indonesia (English)</a></li>
-                    <li><a href="#">English (Global)</a></li>
-                    <li><a href="#">Deutsch (German)</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Indonesia</a></li>
                 </ul>
             </div>
             <div class="contact-us">

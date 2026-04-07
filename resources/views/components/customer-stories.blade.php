@@ -5,34 +5,33 @@
         <div class="stories-header">
             <h2 class="stories-title">Customer Stories</h2>
             <p class="stories-description">
-                Dipercaya oleh lebih dari 2000 perusahaan, SunFish HR membantu bisnis dari berbagai skala dan industri 
-                di Asia Tenggara dengan solusi HRIS dan HCM yang terbukti memberikan hasil nyata. Simak 
-                bagaimana perusahaan-perusahaan ini bertransformasi bersama kami.
+                Trusted by 2,000+ companies, SunFish supports businesses of all sizes and across all industries with powerful HRIS and HCMS solutions and services built for Southeast Asia. Hear from them how SunFish delivers measurable results
             </p>
         </div>
 
         {{-- Main Testimonial Card --}}
         <div class="main-testimonial-card">
-            <p class="company-logo-text">Potato Head Bali</p>
+            <div class="testimonial-logo-company">
+                <img src="{{ asset('images/logo_potatoheadbali.webp') }}" alt="Potato Head Bali" class="company-logo-images">
+            </div>
             <div class="quote-content">
                 <p class="quote-text">
-                    "Sejak menggunakan SunFish, kami melihat peningkatan signifikan dalam praktik HR, 
-                    menjadikannya alat yang sangat berharga bagi aktivitas sehari-hari."
+                    "Since incorporating SunFish HR software into our operations, we have witnessed remarkable enhancements in our HR practices, making it an invaluable tool for our day-to-day activities."
                 </p>
                 <p class="quote-author">
                     Desa Potato Head Bali
                 </p>
             </div>
-            <a href="#" class="read-more-link">Lihat cerita klien kami →</a>
+            <a href="#" class="read-more-link">Read our customer stories →</a>
         </div>
         
         {{-- Story Cards Grid --}}
         <div class="story-cards-grid">
             @php
                 $mini_stories = [
-                    ['title' => 'Transformasi HR Dharma Polimetal Bersama SunFish HR', 'image' => 'customer-stories-1.webp'],
-                    ['title' => 'Transformasi HR KDC, Dari Efisiensi Menuju Inovasi', 'image' => 'customer-stories-2.webp'],
-                    ['title' => 'Perjalanan Transformasi HR PT. Technics Indonesia', 'image' => 'customer-stories-3.webp'],
+                    ['title' => 'PT Dharma Polimetal’s HR Transformation Journey', 'image' => 'customer-stories-1.webp'],
+                    ['title' => 'Internal Excellence, World-class Service: ITDC’s HR Transformation Journey', 'image' => 'customer-stories-2.webp'],
+                    ['title' => 'FL Technics Indonesia’s HR Transformation Journey', 'image' => 'customer-stories-3.webp'],
                 ];
             @endphp
 

@@ -2,15 +2,14 @@
     <div class="cta-content-wrapper">
         <div class="cta-text-column">
             <h2 class="cta-title">
-                Siap membawa manajemen HR Anda ke level berikutnya?
+                Ready to Transform Your HR Operations?
             </h2>
             <p class="cta-description">
-                Solusi strategi, sistem, dan people management untuk menciptakan efisiensi 
-                & transparansi. Pegang kendali setiap pengambilan keputusan bersama 
-                SunFish, Solusi HRD terpercaya di Asia Tenggara.
+                Let’s build a smarter, more connected organization—together.
+                Let us show you what SunFish can do to simplify your Human Resource Management operation and how it scales with your growth.
             </p>
             <a href="#" class="cta-button">
-                Hubungi Kami Sekarang
+                Contact Us
             </a>
         </div>
 

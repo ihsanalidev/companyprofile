@@ -10,10 +10,10 @@
 
         <div class="text-content">
             <h2 class="main-title">
-                Mitra Tepercaya dalam Pengelolaan SDM
+                Your Trusted Partner for Human Resource Management
             </h2>
             <p class="description">
-                Selama lebih dari 20 tahun, DataOn menghadirkan inovasi solusi bisnis end-to-end yang berfokus pada karyawan, mulai dari pemantauan waktu kerja, sistem penggajian, hingga rencana pengembangan karir. Kami bekerja berdampingan dengan Anda untuk memberikan solusi dan layanan terbaik untuk perjalanan SDM perusahaan Anda menciptakan nilai yang berkelanjutan.
+                Over the past 20 years, DataOn has built innovative, end-to-end business solutions that center around employees—their time, their payroll, and simplifying their work lives. Whether you are looking to implement a digital work-life HRIS/ HCM platform, a mobile app, or a reliable partner to run your local and global payroll—we have the solutions and services you need to get ready for what is next in your people journey. We work side by side with you to create value for years to come.
             </p>
         </div>
 

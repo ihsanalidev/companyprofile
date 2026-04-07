@@ -14,18 +14,16 @@ use App\Http\Controllers\HomeController;
 |
 */
 // Web Routes = file yang menyimpan semua route web di Laravel
-
+// =========================================================================
+// VERSI 1
 /*
 Route::get('/', function () {
     return view('welcome');
 });
 */
-
+// =========================================================================
+// VERSI 2
 Route::get('/', [HomeController::class, 'index']);
-
-Route::get('/demo', function () {
-    return view('demo');
-});
 
 Route::get('/demo', [HomeController::class, 'demo'])->name('demo'); 
 
@@ -40,3 +38,4 @@ Route::get('/services', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+// =========================================================================
