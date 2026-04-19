@@ -35,4 +35,9 @@ class HomeController extends Controller
     {
         return view('demo');
     }
+
+    public function hrcore()
+    {
+        return view('hrcore');
+    }
 }

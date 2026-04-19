@@ -15,6 +15,8 @@
 
     @include('partials.header')
 
+    @yield('breadcrumb')
+
     <main>
         @yield('content')
     </main>

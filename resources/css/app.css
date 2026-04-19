@@ -20,12 +20,20 @@ a {
     color: inherit;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .top-header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 40px;
-    font-size: 14px;
+    padding: 5px 40px;
+    font-size: 12px;
 }
 
 .contact-info {
@@ -295,6 +303,8 @@ a {
 .has-dropdown {
     position: relative;
     cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
 .dropdown {
@@ -304,12 +314,26 @@ a {
     left: 0;
     background: white;
     list-style: none;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 12px;
 }
 
 .has-dropdown:hover .dropdown {
     display: block;
+}
+.dropdown li {
+    padding: 5px 0;
+}
+.dropdown li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+}
+
+.dropdown li a:hover {
+    color: #2b59c3;
 }
 /* ========================================================================= ANNOUNCEMENT BAR ============================================================================== */
 .announcement-bar {
@@ -1593,6 +1617,82 @@ select.invalid + .error-text {
 .cta-mockup-image {
     width: 400px;
     height: auto;
+}
+/* ========================================================================= BREADCRUMB ============================================================================== */
+.breadcrumb{
+    display: block;
+    padding: 40px 80px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+.active-breadcrumb {
+    text-decoration: none;
+    color: black;
+}
+/* ========================================================================= HRCORE1 ============================================================================== */
+.hrcore1-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 50px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.hrcore1-left {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.hrcore1-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrcore1-visual {
+    max-width: 100%;
+    height: auto;
+}
+
+.hrcore1-subtitle {
+    color: var(--primary-blue); 
+}
+/* ========================================================================= HRCORE2 ============================================================================== */
+.hrcore2-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 50px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 80px 80px;
+    background-color: #ebeff8;
+}
+.hrcore2-left {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.hrcore2-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrcore2-visual {
+    max-width: 100%;
+    height: auto;
+}
+
+.hrcore2-subtitle {
+    color: var(--primary-blue); 
 }
 /* ========================================================================= FOOTER ============================================================================== */
 :root {

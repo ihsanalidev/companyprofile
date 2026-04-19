@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <!-- =========================================================================================================== -->
         <div class="top-header">
             <div class="contact-info">
                 <i class="fas fa-phone-alt"></i>
@@ -28,10 +29,8 @@
                     <li><a href="#">Indonesia</a></li>
                 </ul>
             </div>
-            <div class="contact-us">
-                <a href="#">Contact Us</a>
-            </div>
         </div>
+        <!-- =========================================================================================================== -->
         <div class="main-header">
             <div class="logo-and-nav">
                 <div class="logo">
@@ -44,7 +43,7 @@
                     <li class="has-dropdown">
                         <span>Products</span>
                         <ul class="dropdown">
-                            <li><a href="#">HR Core</a></li>
+                            <li><a href="{{ route('hrcore') }}">HR Core</a></li>
                             <li><a href="#">Enterprise Payroll</a></li>
                             <li><a href="#">Training</a></li>
                         </ul>
@@ -53,40 +52,32 @@
                         <span>Services</span>
                         <ul class="dropdown">
                             <li><a href="#">Consulting</a></li>
-                            <li><a href="#">Implementations & Customo</a></li>
+                            <li><a href="#">Implementations & Customization</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
                         <span>Resources</span>
                         <ul class="dropdown">
-                            <li><a href="#">HR Core</a></li>
-                            <li><a href="#">Enterprise Payroll</a></li>
-                            <li><a href="#">Training</a></li>
+                            <li><a href="#">XXX</a></li>
+                            <li><a href="#">YYY</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
                         <span>Customers</span>
                         <ul class="dropdown">
-                            <li><a href="#">HR Core</a></li>
-                            <li><a href="#">Enterprise Payroll</a></li>
-                            <li><a href="#">Training</a></li>
+                            <li><a href="#">XXX</a></li>
+                            <li><a href="#">YYY</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
                         <span>Company</span>
                         <ul class="dropdown">
-                            <li><a href="#">HR Core</a></li>
-                            <li><a href="#">Enterprise Payroll</a></li>
-                            <li><a href="#">Training</a></li>
+                            <li><a href="#">XXX</a></li>
+                            <li><a href="#">YYY</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <span>Contact Us</span>
-                        <ul class="dropdown">
-                            <li><a href="#">HR Core</a></li>
-                            <li><a href="#">Enterprise Payroll</a></li>
-                            <li><a href="#">Training</a></li>
-                        </ul>
+                        <span><a href="{{ url('/demo') }}">Contact Us</a></span>
                     </li>
                 </ul>
             </div>

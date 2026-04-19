@@ -27,6 +27,8 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/demo', [HomeController::class, 'demo'])->name('demo'); 
 
+Route::get('/hrcore', [HomeController::class, 'hrcore'])->name('hrcore'); 
+
 Route::get('/about', function () {
     return view('about');
 });

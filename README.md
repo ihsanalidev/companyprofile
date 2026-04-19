@@ -12,7 +12,7 @@ php artisan key:generate
 
 - Run project
 open Laragon > Laragon terminal
-C:\Users\hp89\Pictures\projects\companyprofile
+cd C:\Users\hp89\Pictures\projects\companyprofile
 
 BACKEND :
 php artisan serve
